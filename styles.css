@@ -28,7 +28,11 @@ body, html {
     position: relative;
     top: 130px; 
     left: 980px;
-    transition: top 2s ease-in-out;
+  
+}
+
+.sol.grande:hover{
+    animation: amanecerSolGrande 5s ease-in-out forwards; 
 }
 
 .sol.peque{
@@ -39,12 +43,38 @@ body, html {
     border-radius: 50%; 
     top: 250px; 
     left: 1100px; 
-    transition: top 2s ease-in-out;
+    animation: amanecerSolPequeno 5s ease-in-out forwards; 
+
+
 }
 
-.sol.grande.amanecer , .sol.peque.amanecer {
-    top: 50px; 
+
+
+
+
+@keyframes amanecerSolGrande {
+    0% {
+      top: 130px; 
+      opacity: 1; 
+    }
+    100% {
+      top:  120px;
+      opacity: 0; 
+    }
   }
+
+  @keyframes amanecerSolPequeno {
+    0% {
+      top: 100px; 
+      opacity: 0; 
+    }
+    100% {
+      top: 250px; 
+      opacity: 1;
+    }
+  }
+
+
 .casa{
     display: flex;
     justify-content: center;
@@ -56,8 +86,8 @@ body, html {
     border-style: solid;
     border-color: black;
     border-width: 4px;
-    background: #d9a066;
-   
+  
+    background: linear-gradient(to right, #cd853f 50%, #d9a066 50%);
 }
 
 
@@ -72,12 +102,12 @@ body, html {
     border-style: solid;
     border-color: black;
     border-width: 4px;
-    background: #d9a066;
+    background: linear-gradient(to right, #cd853f 50%, #d9a066 50%);
    
 }
 
 .casa + .terraza {
-  background: #d9a066; 
+    background: linear-gradient(to right, #cd853f 50%, #d9a066 50%);
 }
 
 .casa > :first-child {
@@ -111,7 +141,8 @@ body, html {
     border-style: solid;
     border-color: black;
     border-width: 4px;
-    background: #d9a066;
+    background: linear-gradient(to right, #cd853f 50%, #d9a066 50%);
+     box-shadow: -5px 10px 10px 0 rgba(0, 0, 0, 0.3);
    
 }
 
@@ -125,7 +156,8 @@ body, html {
     border-top-style: none;
     border-color: black;
     border-width: 4px;
-    background: #d9a066;
+    background: linear-gradient(to right, #cd853f 50%, #d9a066 50%);
+    box-shadow: -10px 10px 10px 0 rgba(0, 0, 0, 0.3);
    
 }
 
@@ -140,7 +172,7 @@ body, html {
     border-top-style: solid;
 
     border-width: 4px;
-    background: #d9a066;
+    background: linear-gradient(to right, #cd853f 50%, #d9a066 50%);
    
 }
 
@@ -153,7 +185,7 @@ body, html {
     height: 220px; 
     top: -50px;
     
-    background: #d9a066; 
+    background: linear-gradient(to right, #cd853f 50%, #d9a066 50%);
     border-radius: 50%; 
     border: 4px solid black; 
    
@@ -164,7 +196,7 @@ body, html {
     margin-top: -30px;
     width: 50px; 
     height: 100px;
-    background-color: #654321; 
+    background: linear-gradient(to right, #753a10 50%, #894515 50%);
     border: 4px solid #000; 
     border-top: 0;
     
@@ -172,12 +204,15 @@ body, html {
 
 
   
+ 
+
+  
 .puerta.marco {
     margin-left: 700px;
     margin-top: -120px;
     width: 50px;
     height: 50px;
-    background-color: #654321; 
+    background: linear-gradient(to right, #753a10 50%, #894515 50%);
     border: 4px solid #000; 
     border-radius: 50%;
   
@@ -190,9 +225,14 @@ body, html {
     height: 15px;
     background-color: black; 
     border: 4px solid #000; 
+    transition: background-color 0.3s ease;
    
 
 }
+
+.ventana:hover {
+    background-color: #9c71d1; 
+  }
 
 
 .caja1{
@@ -202,10 +242,32 @@ body, html {
     height: 25px;
     background-color: #d2691e; 
     border: 4px solid #000; 
-    
+    transition: all 0.3s ease;
    
 
 }
+.caja1:hover {
+    transform: scale(1.1); 
+  }
+
+  .caja2:hover {
+    transform: scale(1.1); 
+  }
+  .caja3:hover {
+    transform: scale(1.1); 
+  }
+  .caja4:hover {
+    transform: scale(1.1); 
+  }
+  .caja5:hover {
+    transform: scale(1.1); 
+  }
+  .caja6:hover {
+    transform: scale(1.1); 
+  }
+  .caja7:hover {
+    transform: scale(1.1); 
+  }
 
 .caja2{
     margin-left: 793px;
@@ -214,6 +276,7 @@ body, html {
     height: 35px;
     background-color: #d2691e; 
     border: 4px solid #000; 
+    transition: all 0.3s ease;
    
 
 }
@@ -225,6 +288,7 @@ body, html {
     height: 35px;
     background-color: #79af79; 
     border: 4px solid #000; 
+    transition: all 0.3s ease;
    
 
 }
@@ -236,6 +300,7 @@ body, html {
     height: 25px;
     background-color: #9f512c; 
     border: 4px solid #000; 
+    transition: all 0.3s ease;
    
 
 }
@@ -247,6 +312,7 @@ body, html {
     height: 45px;
     background-color: #9f512c; 
     border: 4px solid #000; 
+    transition: all 0.3s ease;
    
 
 }
@@ -257,6 +323,7 @@ body, html {
     height: 65px;
     background-color: #79af79; 
     border: 4px solid #000; 
+    transition: all 0.3s ease;
    
 
 }
@@ -268,6 +335,7 @@ body, html {
     height: 15px;
     background-color: #9f512c; 
     border: 4px solid #000; 
+    transition: all 0.3s ease;
    
 
 }
