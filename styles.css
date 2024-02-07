@@ -1,0 +1,25 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+
+#cielo {
+    background: linear-gradient(to bottom, #ff9a9e 40%,#9c71d1 100%);
+    width: 100%;
+    height: 50%; 
+}
+
+
+#suelo {
+    background: #f5deb3; 
+    width: 100%;
+    height: 50%; 
+}
