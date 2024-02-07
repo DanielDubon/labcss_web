@@ -11,36 +11,279 @@ body, html {
 }
 
 
-#cielo {
+.cielo {
+    display: flex;
     background: linear-gradient(to bottom, #f58078 10%,#9c71d1 100%);
     width: 100%;
     height: 60%; 
+
 }
 
 
-#sol-grande {
+.sol.grande {
     width: 50px; 
     height: 50px; 
     background-color: #fff; 
     border-radius: 50%;
     position: relative;
-    top: 150px; 
-    left: 950px;
+    top: 130px; 
+    left: 980px;
+    transition: top 2s ease-in-out;
 }
 
-#sol-pequeno {
+.sol.peque{
     width: 50px; 
     height: 50px; 
     background-color: #ff1493; 
     position: relative;
     border-radius: 50%; 
-    top: 200px; 
+    top: 250px; 
     left: 1100px; 
+    transition: top 2s ease-in-out;
+}
+
+.sol.grande.amanecer , .sol.peque.amanecer {
+    top: 50px; 
+  }
+.casa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 150px;
+    margin-left: 550px;
+    margin-top: -375px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    background: #d9a066;
+   
 }
 
 
-#suelo {
+.casa.terraza{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 100px;
+    margin-left: 550px;
+    margin-top: -95px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    background: #d9a066;
+   
+}
+
+.casa + .terraza {
+  background: #d9a066; 
+}
+
+.casa > :first-child {
+    border: 2px solid #000; 
+  }
+
+  .casa > :last-child {
+    border: 2px solid #000; 
+  }
+
+  .casa > :nth-child(2) {
+    background: #eaeaea; 
+  }
+
+.casa::before , .casa::after {
+    content: "";
+    position: relative;
+    width: 100%; 
+    height: 20px; 
+    bottom: -20px; 
+ 
+  
+}
+
+.casa.sala{
+
+    width: 220px;
+    height: 100px;
+    margin-left: 615px;
+    margin-top: -100px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    background: #d9a066;
+   
+}
+
+.casa.entrada{
+
+    width: 120px;
+    height: 100px;
+    margin-left: 665px;
+    margin-top: -50px;
+    border-style: solid;
+    border-top-style: none;
+    border-color: black;
+    border-width: 4px;
+    background: #d9a066;
+   
+}
+
+.casa.marcoentrada{
+
+    width: 120px;
+    height: 100px;
+    margin-left: 665px;
+    margin-top: -150px;
+    border-radius: 50%;
+    border-color: black;
+    border-top-style: solid;
+
+    border-width: 4px;
+    background: #d9a066;
+   
+}
+
+
+.techo {
+  
+    margin-left: 615px;
+    margin-top: -220px;
+    width: 220px;
+    height: 220px; 
+    top: -50px;
+    
+    background: #d9a066; 
+    border-radius: 50%; 
+    border: 4px solid black; 
+   
+  }
+
+.puerta {
+    margin-left: 700px;
+    margin-top: -30px;
+    width: 50px; 
+    height: 100px;
+    background-color: #654321; 
+    border: 4px solid #000; 
+    border-top: 0;
+    
+}
+
+
+  
+.puerta.marco {
+    margin-left: 700px;
+    margin-top: -120px;
+    width: 50px;
+    height: 50px;
+    background-color: #654321; 
+    border: 4px solid #000; 
+    border-radius: 50%;
+  
+}
+
+.ventana{
+    margin-left: 793px;
+    margin-top: -80px;
+    width: 30px;
+    height: 15px;
+    background-color: black; 
+    border: 4px solid #000; 
+   
+
+}
+
+
+.caja1{
+    margin-left: 810px;
+    margin-top: 40px;
+    width: 15px;
+    height: 25px;
+    background-color: #d2691e; 
+    border: 4px solid #000; 
+    
+   
+
+}
+
+.caja2{
+    margin-left: 793px;
+    margin-top: -35px;
+    width: 15px;
+    height: 35px;
+    background-color: #d2691e; 
+    border: 4px solid #000; 
+   
+
+}
+
+.caja3{
+    margin-left: 625px;
+    margin-top: -35px;
+    width: 35px;
+    height: 35px;
+    background-color: #79af79; 
+    border: 4px solid #000; 
+   
+
+}
+
+.caja4{
+    margin-left: 570px;
+    margin-top: -25px;
+    width: 35px;
+    height: 25px;
+    background-color: #9f512c; 
+    border: 4px solid #000; 
+   
+
+}
+
+.caja5{
+    margin-left: 490px;
+    margin-top: -45px;
+    width: 40px;
+    height: 45px;
+    background-color: #9f512c; 
+    border: 4px solid #000; 
+   
+
+}
+.caja6{
+    margin-left: 515px;
+    margin-top: -65px;
+    width: 15px;
+    height: 65px;
+    background-color: #79af79; 
+    border: 4px solid #000; 
+   
+
+}
+
+.caja7{
+    margin-left: 815px;
+    margin-top: 5px;
+    width: 65px;
+    height: 15px;
+    background-color: #9f512c; 
+    border: 4px solid #000; 
+   
+
+}
+
+
+
+
+
+
+
+.suelo {
     background: #f5deb3; 
+    border-color: black;
+    border-top-style: solid;
+   
+    border-width: 5px;
     width: 100%;
     height: 40%; 
 }
