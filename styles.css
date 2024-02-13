@@ -358,4 +358,145 @@ body, html {
 }
 
 
+.parte1{
+    width: 20px;
+    height: 20px;
+    background-color: #d3d3d3;
+    border: solid #000 5px;
+    margin-left: 300px;
+    margin-top: -15px;
   
+}
+  
+
+.parte2{
+    width: 20px;
+    height: 20px;
+    background-color: #d3d3d3;
+    border: solid #000 5px;
+    margin-left: 350px;
+    margin-top: -20px;
+   
+}
+
+.palogrande{
+    width: 6px;
+    height: 230px;
+    margin-left: 332px;
+    margin-top: -5px;
+    border: solid #000 0px;
+    background-color: #000;
+    
+}
+
+.palohorizontal1{
+    width: 60px;
+    height: 6px;
+    margin-left: 305px;
+    margin-top: -290px;
+    border: solid #000 0px;
+    background-color: #000;
+    
+    
+}
+
+.antenacentro1{
+    width: 25px;
+    height: 30px;
+    margin-left: 323px;
+    margin-top: -180px;
+    border: solid #000 5px;
+    background-color: #d3d3d3;
+}
+
+.antenacentro2{
+    width: 25px;
+    height: 30px;
+    margin-left: 323px;
+    margin-top: -2px;
+    border: solid #000 5px;
+    background-color: #d3d3d3;
+}
+
+.antenacentro3{
+    width: 25px;
+    height: 30px;
+    margin-left: 323px;
+    margin-top: -2px;
+    border: solid #000 5px;
+    background-color: #d3d3d3;
+}
+
+.antenacentro4{
+    width: 35px;
+    height: 40px;
+    margin-left: 318px;
+    margin-top: 5px;
+    border: solid #000 5px;
+    background-color: #d3d3d3;
+}
+
+.antenacentro5{
+    width: 35px;
+    height: 35px;
+    margin-left: 318px;
+    margin-top: 5px;
+    border: solid #000 5px;
+    background-color: #d3d3d3;
+}
+
+.base{
+    width: 50px;
+    height: 25px;
+    margin-left: 310px;
+    margin-top: 8px;
+    border: solid #000 5px;
+    background-color: #d3d3d3;
+}
+
+.brazoder{
+    width: 5px;
+    height: 72px;
+    margin-left: 300px;
+    margin-top: -100px;
+    border: solid #000 0px;
+    background-color: #000;
+}
+
+
+.brazoiz{
+    width: 5px;
+    height: 72px;
+    margin-left: 366px;
+    margin-top: -71px;
+    border: solid #000 0px;
+    background-color: #000;
+}
+
+
+.brazocentro{
+    width: 5px;
+    height: 72px;
+    margin-left: 333px;
+    margin-top: -71px;
+    border: solid #000 0px;
+    background-color: #000;
+}
+
+.sosten1{
+    width: 20px;
+    height: 5px;
+    margin-left: 300px;
+    margin-top: -61px;
+    border: solid #000 0px;
+    background-color: #000;
+}
+
+.sosten2{
+    width: 20px;
+    height: 5px;
+    margin-left: 350px;
+    margin-top: -5px;
+    border: solid #000 0px;
+    background-color: #000;
+}
